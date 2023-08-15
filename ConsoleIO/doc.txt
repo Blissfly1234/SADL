@@ -1,0 +1,49 @@
+Table of Contents
+	Creating a ConsoleIO Object
+	getLine
+	Other Get Commands
+	System Failiar
+	Output
+
+Creating a ConsoleIO Object
+
+In order to create a connection to the console you need to create the ConsoleIO object. To do this, simply put:
+
+consoleIO console;
+
+You may change "console" to the name of your choise, but for this demistration we will be using "console".
+
+
+getLine
+
+The getLine() function is the biggest function here. It allows you to get the whole input line without losing any data.
+It returns a string and does not edit the data in any way. The String header file is also built into the ConsoleIO header 
+file.
+
+std::string String = console.getLine();
+
+
+Other Get Commands
+
+The other Get commands will return their respected types. there is getBool(), getChar(), getShort(), getInt(), getLong(), 
+getFloat() and getDouble(). Each will promt the user for their respected types, and if it fails will set the FAIL flag
+to true.
+
+getBool() will take in yes, Yes, no, No, true, True, false and False as an input and nothing else.
+
+
+System Failiar
+
+If the Get commands fail to retreave their respected data, then the FAIL flag will be set to true. The FAIL flag will also
+be reset once the next Get command is ran. To retreave the FAIL flag use "console.fail()". This will return true if the 
+last Get command failed.
+
+
+Output:
+
+The ConsoleIO object has an editable string known as "output". This is the Output Buffer and will be read from when you
+print. Simply add whatever you want to print to the Output Buffer, and when you are finished and ready to print run
+"console.out()". This will print whatever is in "output" then clear it so it is ready for the next output.
+
+
+Thank you for downloading! We hope this helps!
