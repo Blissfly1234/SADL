@@ -10,7 +10,7 @@ private:
 
 	void in();
 public:
-	std::string output;
+	std::string outputBuffer;
 
 	std::string getLine();
 
@@ -24,5 +24,6 @@ public:
 
 	bool fail();
 
-	void out();
+	void printBuffer();
+	void print(const char output[]);
 };
