@@ -1,0 +1,22 @@
+Commands
+
+console.getLine() - Returns a string, copies the whole console input;
+
+console.getBool() - Returns a Bool based on if the console input was true, yes, false, or no.
+console.getChar() - Returns a character
+console.getShort() - Returns a Short
+console.getInt() - Returns an integer
+console.getLong() - Returns a Long
+console.getFloat() - Returns a Float
+console.getDouble() - Returns a Double.
+
+console.fail() - If the previous "get" command failed, then it is stored here. Returns a boolean.
+
+console.print() - Prints out a character array, put an "l" at the beginning with a camma if you want it to print a new line
+console.printBuffer() - Prints whatever you put in "outputBuffer" then clears it. 
+
+Getting Started
+
+By default a consoleIO object should be created. This is named "console" however if you want to change the name,
+the code is located at the bottom of the "ConsoleIO.h" file.
+To test if it is working use "console.print(l, "Hello World!");". 

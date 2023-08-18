@@ -27,3 +27,5 @@ public:
 	void printBuffer();
 	void print(const char output[]);
 };
+
+static consoleIO console;
